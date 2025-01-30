@@ -2,6 +2,13 @@
 
 This document outlines the endpoints available in pumpfun API.
 
+[![Frontend API v1 Deprecated](https://img.shields.io/badge/Frontend%20API-v1%20Deprecated-red)](./frontend-api.json)
+
+[![Frontend API v2](https://img.shields.io/badge/Frontend%20API-v2-blue)](./frontend-api-v2.json)
+
+[![Frontend API v3](https://img.shields.io/badge/Frontend%20API-v3-green)](./frontend-api-v3.json)
+
+
 ## Table of Contents
 
   - [Base URL](#base-url)
@@ -233,4 +240,4 @@ The API uses various data transfer objects (DTOs) for different operations. Some
 - AddOrRemoveItemFromMultipleBookmarksDto
 - AddItemToBookmarkDto
 
-For more detailed information about the request and response formats for each endpoint, please refer to the [full openapi API specification](/openapi.json)
+For more detailed information about the request and response formats for each endpoint, please refer to the specs
