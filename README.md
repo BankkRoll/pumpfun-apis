@@ -2,12 +2,6 @@
 
 This document outlines the endpoints available in pumpfun API.
 
-[![Frontend API v1 Deprecated](https://img.shields.io/badge/Frontend%20API-v1%20Deprecated-red)](./frontend-api.json)
-
-[![Frontend API v2](https://img.shields.io/badge/Frontend%20API-v2-blue)](./frontend-api-v2.json)
-
-[![Frontend API v3](https://img.shields.io/badge/Frontend%20API-v3-green)](./frontend-api-v3.json)
-
 
 ## Table of Contents
 
@@ -26,10 +20,24 @@ This document outlines the endpoints available in pumpfun API.
   - [Other Features](#other-features)
   - [Data Transfer Objects (DTOs)](#data-transfer-objects-dtos)
 
-## Base URL
+## Endpoints
+
+[![Frontend API v1 Deprecated](https://img.shields.io/badge/Frontend%20API-v1%20Deprecated-red)](./frontend-api.json)
 
 ```bash
 https://frontend-api.pump.fun/
+```
+
+[![Frontend API v2](https://img.shields.io/badge/Frontend%20API-v2-blue)](./frontend-api-v2.json)
+
+```bash
+https://frontend-api-v2.pump.fun/
+```
+
+[![Frontend API v3](https://img.shields.io/badge/Frontend%20API-v3-green)](./frontend-api-v3.json)
+
+```bash
+https://frontend-api-v3.pump.fun/
 ```
 
 ## Trades
