@@ -17,6 +17,12 @@ Search for coins based on a query term with filtering, sorting, and pagination.
 | `searchTerm` | string | No | Text query to search for coins |
 | `type` | string | No | Search type, e.g., `hybrid` (default: `hybrid`) |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/coins/search?searchTerm=AI&limit=10&offset=0&sort=market_cap&order=DESC" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

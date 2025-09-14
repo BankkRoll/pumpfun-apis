@@ -12,6 +12,13 @@ Fetch a list of coins with advanced analytics and detailed holder information.
 | `sortBy` | string | No | Field to sort by (e.g., `creationTime`) |
 | `direction` | string | No | Sort direction (`asc` or `desc`) |
 
+### Example Request
+```bash
+curl -X GET "https://advanced-api-v2.pump.fun/coins/list?sortBy=creationTime&direction=desc" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "If-None-Match: W/\"a89a-6nmClpVshjL1gjKboGl7RQ3YVKM\""
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

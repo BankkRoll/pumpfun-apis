@@ -11,6 +11,12 @@ Fetch all followers of a specific user.
 |-----------|------|----------|-------------|
 | `address` | string | Yes | User's wallet address |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/following/followers/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|
@@ -24,7 +30,7 @@ Fetch all followers of a specific user.
   {
     "username": "stfubb",
     "profile_image": null,
-    "address": "F6rGFZvEwdTrjPbPF7g9z8P6C6XiVbbA5JDz1eTdnL7B",
+    "address": "suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK",
     "timestamp": 1749176899119,
     "followers": 542
   },

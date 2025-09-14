@@ -14,6 +14,12 @@ Fetch coins with the highest volatility scores, indicating the most volatile tra
 | `offset` | integer | No | Pagination offset (default: 0) |
 | `worker` | string | No | Worker identifier (default: DEFAULT) |
 
+### Example Request
+```bash
+curl -X GET "https://volatility-api-v2.pump.fun/coins/volatile?limit=10&offset=0&nsfw=false&worker=DEFAULT" \
+  -H "If-None-Match: W/\"2d16-1svuY47pO5vx7mjD+Loc2K2xnYM\""
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

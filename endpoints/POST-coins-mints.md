@@ -22,8 +22,23 @@ Fetch metadata for multiple coin mints at once.
 }
 ```
 
-### Parameters
-- `mints` (array): Array of mint addresses (strings)
+### Request Parameters
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `mints` | array | Yes | Array of mint addresses (strings) |
+
+### Example Request
+```bash
+curl -X POST "https://frontend-api-v3.pump.fun/coins/mints" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "mints": [
+      "9LjLmk78kDbpsR18kYcdbEJe9yWALwkkSWaXA76Epump",
+      "HQDTzNa4nQVetoG6aCbSLX9kcH7tSv2j2sTV67Etpump"
+    ]
+  }'
+```
 
 ## Response
 **Status:** `201 Created`

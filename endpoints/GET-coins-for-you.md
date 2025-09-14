@@ -14,6 +14,12 @@ Fetch a personalized list of coins recommended for the authenticated user.
 | `includeNsfw` | boolean | No | Whether to include NSFW coins (default: false) |
 | `forceControlGroup` | boolean | No | Forces assignment to control group for A/B testing (default: false) |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/coins/for-you?offset=0&limit=20&includeNsfw=false" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

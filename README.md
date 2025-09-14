@@ -46,147 +46,6 @@ All APIs require JWT authentication via `Authorization: Bearer <JWT>` header.
 | `Content-Type` | `application/json` | For POST/PUT requests |
 | `If-None-Match` | `W/"etag-value"` | For caching |
 
-## Frontend API v3 Endpoints
-
-### Coins
-- `POST /coins/mints` - Get metadata for multiple coins
-- `GET /coins/top-runners` - Get top performing coins  
-- `GET /coins/currently-live` - Get currently live coins
-- `GET /coins/for-you` - Get personalized recommendations
-- `GET /coins/search` - Search coins with filters
-- `GET /coins/user-created-coins/{address}` - Get user's created coins
-
-### Bookmarks
-- `GET /bookmarks` - Get user's bookmark collections
-- `GET /bookmarks/default` - Get default bookmarks
-
-### Social Features
-- `GET /following/{address}` - Get user's following list
-- `GET /following/followers/{address}` - Get user's followers
-- `GET /following/single/{followId}` - Check follow status
-
-### Meta & Trends
-- `GET /metas/current` - Get current trending meta words
-
-## Advanced Analytics API v2 Endpoints
-
-### Coin Analytics
-- `GET /coins/list` - Get coins with advanced analytics
-- `GET /coins/featured` - Get featured coins with analytics
-- `GET /coins/graduated` - Get graduated coins (moved to Raydium)
-
-## Volatility API v2 Endpoints
-
-### Volatility Analysis
-- `GET /coins/volatile` - Get most volatile coins by score
-
-## Common Query Parameters
-
-### Pagination
-- `offset` (integer) - Starting position (default: 0)
-- `limit` (integer) - Number of results (default: varies)
-
-### Filtering
-- `includeNsfw` (boolean) - Include NSFW content (default: false)
-- `order` (string) - Sort order: `ASC` or `DESC` (default: `DESC`)
-
-### Search
-- `searchTerm` (string) - Text query for search
-- `sort` (string) - Field to sort by (e.g., `market_cap`, `created_timestamp`)
-
-## Response Formats
-
-### Standard Coin Object
-```json
-{
-  "mint": "string",
-  "name": "string", 
-  "symbol": "string",
-  "description": "string",
-  "image_uri": "string",
-  "metadata_uri": "string",
-  "twitter": "string",
-  "telegram": "string",
-  "bonding_curve": "string",
-  "creator": "string",
-  "created_timestamp": "integer",
-  "market_cap": "number",
-  "usd_market_cap": "number",
-  "is_currently_live": "boolean"
-}
-```
-
-### Advanced Coin Object (Analytics API)
-```json
-{
-  "coinMint": "string",
-  "dev": "string",
-  "name": "string",
-  "ticker": "string",
-  "imageUrl": "string",
-  "creationTime": "integer",
-  "numHolders": "integer",
-  "marketCap": "number",
-  "volume": "number",
-  "bondingCurveProgress": "number",
-  "sniperCount": "integer",
-  "graduationDate": "integer|null",
-  "holders": [
-    {
-      "totalTokenAmountHeld": "number",
-      "isSniper": "boolean",
-      "ownedPercentage": "number",
-      "holderId": "string"
-    }
-  ],
-  "allTimeHighMarketCap": "number",
-  "poolAddress": "string|null",
-  "hasTwitter": "boolean",
-  "hasTelegram": "boolean",
-  "hasWebsite": "boolean",
-  "devHoldingsPercentage": "number",
-  "buyTransactions": "integer",
-  "sellTransactions": "integer",
-  "sniperOwnedPercentage": "number",
-  "topHoldersPercentage": "number"
-}
-```
-
-### Volatile Coin Object
-```json
-{
-  "mint": "string",
-  "name": "string",
-  "symbol": "string",
-  "description": "string",
-  "created_at": "integer",
-  "volatility_score": "number",
-  "usd_market_cap": "number",
-  "image_uri": "string",
-  "metadata_uri": "string",
-  "nsfw": "boolean",
-  "usd_ath_market_cap": "number",
-  "updated_at": "string"
-}
-```
-
-### Bookmark Response
-```json
-{
-  "id": "string",
-  "user_id": "string",
-  "name": "string",
-  "created_at": "string",
-  "items": [
-    {
-      "item_id": "string",
-      "created_at": "string",
-      "details": "CoinObject"
-    }
-  ]
-}
-```
-
 ## Error Handling
 
 ### Common Status Codes
@@ -219,20 +78,97 @@ Many endpoints support ETag caching:
 - [Frontend API v3](./frontend-api-v3.json)
 
 ## Detailed Endpoint Documentation
-- [POST /coins/mints](./endpoints/POST-coins-mints.md)
-- [GET /coins/top-runners](./endpoints/GET-coins-top-runners.md)
-- [GET /coins/currently-live](./endpoints/GET-coins-currently-live.md)
-- [GET /coins/for-you](./endpoints/GET-coins-for-you.md)
-- [GET /coins/search](./endpoints/GET-coins-search.md)
-- [GET /coins/user-created-coins/{address}](./endpoints/GET-coins-user-created-coins.md)
-- [GET /bookmarks](./endpoints/GET-bookmarks.md)
-- [GET /bookmarks/default](./endpoints/GET-bookmarks-default.md)
-- [GET /following/{address}](./endpoints/GET-following.md)
-- [GET /following/followers/{address}](./endpoints/GET-following-followers.md)
-- [GET /following/single/{followId}](./endpoints/GET-following-single.md)
-- [GET /metas/current](./endpoints/GET-metas-current.md)
-- [GET /coins/list](./endpoints/GET-advanced-coins-list.md)
-- [GET /coins/featured](./endpoints/GET-advanced-coins-featured.md)
-- [GET /coins/graduated](./endpoints/GET-advanced-coins-graduated.md)
-- [GET /coins/volatile](./endpoints/GET-advanced-volatility-coins-volatile.md)
+
+### Core Frontend API v3 Endpoints
+- [POST /coins/mints](./endpoints/POST-coins-mints.md) - Fetch metadata for multiple coin mints
+- [GET /coins/top-runners](./endpoints/GET-coins-top-runners.md) - Get curated list of top performing coins
+- [GET /coins/currently-live](./endpoints/GET-coins-currently-live.md) - Fetch all coins currently live on platform
+- [GET /coins/for-you](./endpoints/GET-coins-for-you.md) - Get personalized coin recommendations
+- [GET /coins/search](./endpoints/GET-coins-search.md) - Search coins with filtering and sorting
+- [GET /coins/user-created-coins/{address}](./endpoints/GET-coins-user-created-coins.md) - Get coins created by specific user
+- [GET /bookmarks](./endpoints/GET-bookmarks.md) - Fetch user's bookmarks
+- [GET /bookmarks/default](./endpoints/GET-bookmarks-default.md) - Fetch user's default bookmarks
+- [GET /following/{address}](./endpoints/GET-following.md) - Get users that a specific user is following
+- [GET /following/followers/{address}](./endpoints/GET-following-followers.md) - Get followers of a specific user
+- [GET /following/single/{followId}](./endpoints/GET-following-single.md) - Check if user is following another user
+- [GET /metas/current](./endpoints/GET-metas-current.md) - Get current trending meta words
+
+### Advanced Analytics API v2 Endpoints
+- [GET /coins/list](./endpoints/GET-advanced-coins-list.md) - Advanced coin list with detailed analytics
+- [GET /coins/featured](./endpoints/GET-advanced-coins-featured.md) - Featured coins with holder analytics
+- [GET /coins/graduated](./endpoints/GET-advanced-coins-graduated.md) - Coins that graduated to Raydium
+
+### Volatility API v2 Endpoints
+- [GET /coins/volatile](./endpoints/GET-advanced-volatility-coins-volatile.md) - Most volatile coins by score
+
+## Additional Endpoints
+
+These endpoints have been discovered but are not fully documented or officially supported.
+
+### Authentication & User Management
+- [GET /auth/is-admin](./scrapes/GET__auth_is_admin.md)
+- [GET /auth/is-super-admin](./scrapes/GET__auth_is_super_admin.md)
+- [GET /auth/is-valid-jurisdiction](./scrapes/GET__auth_is_valid_jurisdiction.md)
+- [GET /auth/my-profile](./scrapes/GET__auth_my_profile.md)
+
+### Coin Operations
+- [GET /coins](./scrapes/GET__coins.md)
+- [GET /coins/{mint}](./scrapes/GET__coins__mint_.md)
+- [GET /coins/bookmarks/{id}](./scrapes/GET__coins_bookmarks__id_.md)
+- [GET /coins/bookmarks/default](./scrapes/GET__coins_bookmarks_default.md)
+- [GET /coins/currently-live](./scrapes/GET__coins_currently_live.md)
+- [GET /coins/for-you](./scrapes/GET__coins_for_you.md)
+- [GET /coins/is-free-coin/{mint}](./scrapes/GET__coins_is_free_coin__mint_.md)
+- [GET /coins/king-of-the-hill](./scrapes/GET__coins_king_of_the_hill.md)
+- [GET /coins/latest](./scrapes/GET__coins_latest.md)
+- [GET /coins/personalized](./scrapes/GET__coins_personalized.md)
+- [GET /coins/search](./scrapes/GET__coins_search.md)
+- [GET /coins/similar](./scrapes/GET__coins_similar.md)
+- [GET /coins/user-created-coins/{userId}](./scrapes/GET__coins_user_created_coins__userId_.md)
+
+### Bookmarks Management
+- [GET /bookmarks](./scrapes/GET__bookmarks.md)
+- [GET /bookmarks/default](./scrapes/GET__bookmarks_default.md)
+- [GET /bookmarks/items/{itemId}](./scrapes/GET__bookmarks_items__itemId_.md)
+- [DELETE /bookmarks/{bookmarkId}](./scrapes/DELETE__bookmarks__bookmarkId_.md)
+- [DELETE /bookmarks/default/{itemId}](./scrapes/DELETE__bookmarks_default__itemId_.md)
+
+### Trading & Market Data
+- [GET /trades/latest](./scrapes/GET__trades_latest.md)
+- [GET /trades/followsUserId/count/{mint}](./scrapes/GET__trades_followsUserId_count__mint_.md)
+- [GET /sol-price](./scrapes/GET__sol_price.md)
+
+### System & Utilities
+- [GET /health](./scrapes/GET__health.md)
+- [GET /global-params/{timestamp}](./scrapes/GET__global_params__timestamp_.md)
+- [GET /meet](./scrapes/GET__meet.md)
+- [GET /vanity-random-mint-public-key](./scrapes/GET__vanity_random_mint_public_key.md)
+
+### Moderation & Content
+- [GET /moderation/ban-image-terms](./scrapes/GET__moderation_ban_image_terms.md)
+- [GET /moderation/ban-regex-patterns](./scrapes/GET__moderation_ban_regex_patterns.md)
+- [GET /moderation/logs](./scrapes/GET__moderation_logs.md)
+- [GET /moderation/throttle-exceptions](./scrapes/GET__moderation_throttle_exceptions.md)
+- [GET /replies/ban](./scrapes/GET__replies_ban.md)
+- [GET /replies/is-origin-of-reply-banned/{id}](./scrapes/GET__replies_is_origin_of_reply_banned__id_.md)
+- [GET /replies/user-replies/{address}](./scrapes/GET__replies_user_replies__address_.md)
+
+### Notifications & Social
+- [GET /notifications](./scrapes/GET__notifications.md)
+- [GET /likes/{targetId}](./scrapes/GET__likes__targetId_.md)
+
+### Media & Content
+- [GET /videos/get-previews](./scrapes/GET__videos_get_previews.md)
+- [GET /videos/get-signed-url](./scrapes/GET__videos_get_signed_url.md)
+- [GET /metas/current](./scrapes/GET__metas_current.md)
+- [GET /metas/search](./scrapes/GET__metas_search.md)
+
+### Transaction Processing
+- [GET /send-transaction-jito-tip-account](./scrapes/GET__send_transaction_jito_tip_account.md)
+
+### Contributing
+If you discover new endpoints or have additional information about existing ones, please contribute by:
+1. Testing the endpoint thoroughly
+2. Documenting parameters and responses
+3. Adding to the appropriate section above
 

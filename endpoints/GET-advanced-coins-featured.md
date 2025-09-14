@@ -11,6 +11,12 @@ Fetch featured coins with advanced analytics and detailed holder information.
 |-----------|------|----------|-------------|
 | `keywordSearchActive` | boolean | No | Whether keyword search is active (default: false) |
 
+### Example Request
+```bash
+curl -X GET "https://advanced-api-v2.pump.fun/coins/featured?keywordSearchActive=true" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

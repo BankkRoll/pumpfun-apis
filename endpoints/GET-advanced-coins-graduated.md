@@ -11,6 +11,12 @@ Fetch coins that have graduated from the bonding curve to Raydium liquidity pool
 |-----------|------|----------|-------------|
 | No specific parameters | | | |
 
+### Example Request
+```bash
+curl -X GET "https://advanced-api-v2.pump.fun/coins/graduated" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

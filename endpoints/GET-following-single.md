@@ -16,6 +16,13 @@ Check if a specific user is following another user.
 |-----------|------|----------|-------------|
 | `userId` | string | Yes | User's wallet address to check following status for |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/following/single/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK?userId=suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "If-None-Match: W/\"9b-18SguHYkQaQP4BEIkVJHoXKfes4\""
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

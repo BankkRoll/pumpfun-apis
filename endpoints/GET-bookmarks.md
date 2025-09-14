@@ -12,13 +12,20 @@ Fetch all bookmarks for the authenticated user.
 | `Authorization` | `Bearer <JWT>` | Yes |
 | `If-None-Match` | `W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"` | No |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/bookmarks" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "If-None-Match: W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+```
+
 ## Response
 **Status:** `200 OK`
 
 ```json
 {
-    "id": "c90b3e5e-adb5-4d62-b3b2-e11ff9bd1e6c",
-    "user_id": "xHztDMZAjE5dS3nJrah43aMZG1AjibkCq8huQCxaHFW",
+    "id": "c20b1e5s-adb4-4d62-b3b2-e61ff9bd1e6c",
+    "user_id": "suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK",
     "name": "default",
     "created_at": "2025-09-14T13:14:31.571031+00:00",
     "items": [

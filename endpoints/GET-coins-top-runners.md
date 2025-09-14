@@ -11,6 +11,12 @@ Fetch a curated list of coins currently performing the best on the platform.
 |--------|-------|----------|
 | `Authorization` | `Bearer <JWT>` | Yes |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/coins/top-runners" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Response
 **Status:** `200 OK`
 

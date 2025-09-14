@@ -14,6 +14,12 @@ Fetch a list of all coins that are currently live on the platform.
 | `includeNsfw` | boolean | No | Whether to include NSFW coins (default: false) |
 | `order` | string | No | Sorting order, `ASC` or `DESC` (default: DESC) |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/coins/currently-live?offset=0&limit=10&includeNsfw=false&order=DESC" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

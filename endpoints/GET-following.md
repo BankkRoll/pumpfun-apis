@@ -11,6 +11,13 @@ Fetch all users that a specific user is following.
 |-----------|------|----------|-------------|
 | `address` | string | Yes | User's wallet address |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/following/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+  -H "If-None-Match: W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+```
+
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|

@@ -11,6 +11,12 @@ Fetch a list of current trending "meta words" on the platform.
 |--------|-------|----------|
 | `Authorization` | `Bearer <JWT>` | Yes |
 
+### Example Request
+```bash
+curl -X GET "https://frontend-api-v3.pump.fun/metas/current" \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
+
 ## Response
 **Status:** `200 OK`
 
