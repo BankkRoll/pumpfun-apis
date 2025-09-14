@@ -14,14 +14,12 @@ API endpoint for retrieving market activity statistics for a specific trading po
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|
-| `Accept` | `*/*` | Yes |
-| `Origin` | `https://pump.fun` | Yes |
+| `Authorization` | `Bearer <JWT>` | Yes |
 
 ### Example Request
 ```bash
 curl -X GET "https://swap-api.pump.fun/v1/pools/{poolId}/market-activity" \
-  -H "Accept: */*" \
-  -H "Origin: https://pump.fun"
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
 ## Response Examples

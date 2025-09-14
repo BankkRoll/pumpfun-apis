@@ -15,14 +15,12 @@ API endpoint for retrieving details of a specific clip from a livestream room.
 ## Headers
 | Header | Value | Required |
 |--------|-------|----------|
-| `Accept` | `application/json` | Yes |
-| `Origin` | `https://pump.fun` | Yes |
+| `Authorization` | `Bearer <JWT>` | Yes |
 
 ### Example Request
 ```bash
 curl -X GET "https://livestream-api.pump.fun/clips/{roomName}/{clipId}" \
-  -H "Accept: application/json" \
-  -H "Origin: https://pump.fun"
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
 ## Response Examples

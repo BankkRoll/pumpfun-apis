@@ -37,12 +37,14 @@ https://volatility-api-v2.pump.fun/
 ## Quick Reference
 
 ### Authentication
-All APIs require JWT authentication via `Authorization: Bearer <JWT>` header.
+Most APIs require JWT authentication via `Authorization: Bearer <JWT>` header. It's recommended to include authentication with all requests to ensure complete data retrieval and avoid potential access issues.
 
 ### Common Headers
 | Header | Value | Required |
 |--------|-------|----------|
 | `Authorization` | `Bearer <JWT>` | Yes |
+| `Accept` | `application/json` or `*/*` | Yes |
+| `Origin` | `https://pump.fun` | Yes |
 | `Content-Type` | `application/json` | For POST/PUT requests |
 | `If-None-Match` | `W/"etag-value"` | For caching |
 
