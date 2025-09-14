@@ -101,6 +101,13 @@ Many endpoints support ETag caching:
 ### Volatility API v2 Endpoints
 - [GET /coins/volatile](./endpoints/GET-advanced-volatility-coins-volatile.md) - Most volatile coins by score
 
+### Livestream API Endpoints
+- [GET /clips/{roomName}](./endpoints/GET-clips-roomName.md) - Get clips from a livestream room
+- [GET /clips/{roomName}/{clipId}](./endpoints/GET-clips-roomName-clipId.md) - Get specific clip details
+
+### Market Activity API Endpoints
+- [GET /v1/pools/{poolId}/market-activity](./endpoints/GET-v1-pools-poolId-market-activity.md) - Get market activity statistics for a trading pool
+
 ## Additional Endpoints
 
 These endpoints have been discovered but are not fully documented or officially supported.
