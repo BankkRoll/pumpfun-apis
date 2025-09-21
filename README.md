@@ -181,3 +181,17 @@ If you discover new endpoints or have additional information about existing ones
 2. Documenting parameters and responses
 3. Adding to the appropriate section above
 
+---
+
+## ⚠️ Disclaimer
+
+This is an **unofficial repository** that documents publicly available Pump.fun API endpoints.
+
+- All APIs and services referenced are **owned and operated by Pump.fun**.  
+- This documentation is provided **for research and educational purposes only**.  
+- I **do not endorse, support, or encourage** spam, abuse, or misuse of these endpoints.  
+- Please respect rate limits, authentication, and Pump.fun’s terms of service.  
+
+👉 If you are a Pump.fun operator or authorized representative and want content **removed, corrected, or updated**, please **open an issue** in this repository. I will review and respond promptly.  
+
+Licensed under the [MIT License](./LICENSE).  
