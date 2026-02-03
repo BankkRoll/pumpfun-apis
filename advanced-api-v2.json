@@ -1,0 +1,219 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "AppController_getHello",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "AppController_getHealth",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/list": {
+      "get": {
+        "operationId": "CoinsController_getCoinsBy",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/kolscan": {
+      "get": {
+        "operationId": "CoinsController_getKolscanCoins",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/graduated": {
+      "get": {
+        "operationId": "CoinsController_getGraduatedCoins",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/featured": {
+      "get": {
+        "operationId": "CoinsController_getFeaturedCoins",
+        "parameters": [
+          {
+            "name": "offset",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "keywordSearchActive",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/metadata/{mint}": {
+      "get": {
+        "operationId": "CoinsController_getCoinMetadata",
+        "parameters": [
+          {
+            "name": "mint",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/top-holders-and-sol-balance/{mint}": {
+      "get": {
+        "operationId": "CoinsController_getTopHoldersAndSolBalance",
+        "parameters": [
+          {
+            "name": "mint",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/metadatas": {
+      "post": {
+        "operationId": "CoinsController_getCoinMetadatas",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetMintsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/coins/mints": {
+      "post": {
+        "operationId": "CoinsController_getCoinsByMints",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetMintsDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/search": {
+      "get": {
+        "operationId": "SearchController_getAll",
+        "parameters": [
+          {
+            "name": "mint",
+            "required": true,
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "title": "advanced-server",
+    "description": "The advanced-server API description",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "advanced-server",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "GetMintsDto": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+}
