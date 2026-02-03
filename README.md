@@ -4,45 +4,54 @@ Complete documentation for all Pump.fun API endpoints and specifications.
 
 **Total Documented Endpoints: 483**
 
-See the [docs/](docs/) folder for complete endpoint documentation or browse the [INDEX.md](docs/INDEX.md) for a full list.
+See the [endpoints/](endpoints/) folder for complete endpoint documentation or browse the [INDEX.md](endpoints/INDEX.md) for a full list.
 
 ## API Versions
 
 ### Frontend API v3 (Current)
+
 [![Frontend API v3](https://img.shields.io/badge/Frontend%20API-v3-green)](./discovered/frontend-api-v3.json)
 
 ```bash
 https://frontend-api-v3.pump.fun/
 ```
+
 **159 endpoints** - Main API for pump.fun platform operations
 
 ### Frontend API v2 (Deprecated)
+
 [![Frontend API v2 Deprecated](https://img.shields.io/badge/Frontend%20API-v2%20Deprecated-red)](./discovered/frontend-api-v2.json)
 
 ```bash
 https://frontend-api-v2.pump.fun/
 ```
+
 **159 endpoints** - Previous version with similar functionality
 
 ### Frontend API v1 (Deprecated)
+
 [![Frontend API v1 Deprecated](https://img.shields.io/badge/Frontend%20API-v1%20Deprecated-red)](./discovered/frontend-api.json)
 
 ```bash
 https://frontend-api.pump.fun/
 ```
+
 **154 endpoints** - Original API version
 
 ### Advanced Analytics API v2
+
 [![Advanced API v2](https://img.shields.io/badge/Advanced%20Analytics%20API-v2-blue)](./discovered/advanced-api-v2.json)
 
 ```bash
 https://advanced-api-v2.pump.fun/
 ```
+
 **11 endpoints** - Advanced coin analytics and metadata
 
 ### Other Discovered API Domains
 
 The spider has discovered these additional API domains (OpenAPI specs not available):
+
 - `https://profile-api.pump.fun` - User profile operations
 - `https://swap-api.pump.fun` - Token swap functionality
 - `https://volatility-api-v2.pump.fun` - Volatility metrics
@@ -97,6 +106,7 @@ Many endpoints support ETag caching:
 ## OpenAPI Specifications
 
 All OpenAPI specs are located in the [discovered/](discovered/) folder:
+
 - [Frontend API v1](./discovered/frontend-api.json)
 - [Frontend API v2](./discovered/frontend-api-v2.json)
 - [Frontend API v3](./discovered/frontend-api-v3.json)
@@ -104,7 +114,8 @@ All OpenAPI specs are located in the [discovered/](discovered/) folder:
 
 ## Documentation
 
-All 483 endpoints are documented in the [docs/](docs/) folder with complete details including:
+All 483 endpoints are documented in the [endpoints/](endpoints/) folder with complete details including:
+
 - Full URL and method
 - Authentication requirements
 - Parameters and request body schemas
@@ -112,11 +123,12 @@ All 483 endpoints are documented in the [docs/](docs/) folder with complete deta
 - Code examples in cURL and Python
 
 Browse by endpoint type:
-- [GET Endpoints](./docs/INDEX.md#get-endpoints)
-- [POST Endpoints](./docs/INDEX.md#post-endpoints)
-- [PUT Endpoints](./docs/INDEX.md#put-endpoints)
-- [DELETE Endpoints](./docs/INDEX.md#delete-endpoints)
-- [PATCH Endpoints](./docs/INDEX.md#patch-endpoints)
+
+- [GET Endpoints](./endpoints/INDEX.md#get-endpoints)
+- [POST Endpoints](./endpoints/INDEX.md#post-endpoints)
+- [PUT Endpoints](./endpoints/INDEX.md#put-endpoints)
+- [DELETE Endpoints](./endpoints/INDEX.md#delete-endpoints)
+- [PATCH Endpoints](./endpoints/INDEX.md#patch-endpoints)
 
 ---
 
