@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/ban-terms/{id}`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/ban-terms/{id}`
 - **Method:** `DELETE`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_removeBanTerm`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `id`      | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X DELETE "https://frontend-api.pump.fun/moderation/ban-terms/<id>" \
+curl -X DELETE "https://frontend-api-v3.pump.fun/moderation/ban-terms/<id>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X DELETE "https://frontend-api.pump.fun/moderation/ban-terms/<id>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/ban-terms/<id>"
+url = "https://frontend-api-v3.pump.fun/moderation/ban-terms/<id>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

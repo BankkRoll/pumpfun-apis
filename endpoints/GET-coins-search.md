@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/search`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/search`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_search`
@@ -13,28 +13,29 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `sort` | `string` | query | ✓ |  |
-| `searchTerm` | `string` | query | ✓ |  |
-| `order` | `string` | query | ✓ |  |
-| `includeNsfw` | `boolean` | query | ✓ |  |
-| `creator` | `string` | query | ✓ |  |
-| `complete` | `boolean` | query | ✓ |  |
-| `meta` | `string` | query | ✓ |  |
-| `type` | `string` | query | ✓ |  |
+| Parameter     | Type      | In    | Required | Description |
+| ------------- | --------- | ----- | -------- | ----------- |
+| `limit`       | `number`  | query | ✓        |             |
+| `offset`      | `number`  | query | ✓        |             |
+| `sort`        | `string`  | query | ✓        |             |
+| `searchTerm`  | `string`  | query | ✓        |             |
+| `order`       | `string`  | query | ✓        |             |
+| `includeNsfw` | `boolean` | query | ✓        |             |
+| `creator`     | `string`  | query | ✓        |             |
+| `complete`    | `boolean` | query | ✓        |             |
+| `meta`        | `string`  | query | ✓        |             |
+| `type`        | `string`  | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/coins/search?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&meta=<meta>&type=<type>" \
+curl -X GET "https://frontend-api-v3.pump.fun/coins/search?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&meta=<meta>&type=<type>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -44,7 +45,7 @@ curl -X GET "https://frontend-api.pump.fun/coins/search?limit=<limit>&offset=<of
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/search?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&meta=<meta>&type=<type>"
+url = "https://frontend-api-v3.pump.fun/coins/search?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&meta=<meta>&type=<type>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/token/generateTokenForThread`
+- **URL:** `https://frontend-api-v3.pump.fun/token/generateTokenForThread`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TokenController_generateTokenForThread`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/token/generateTokenForThread" \
+curl -X GET "https://frontend-api-v3.pump.fun/token/generateTokenForThread" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X GET "https://frontend-api.pump.fun/token/generateTokenForThread" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/token/generateTokenForThread"
+url = "https://frontend-api-v3.pump.fun/token/generateTokenForThread"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

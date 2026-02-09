@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/global-params/{timestamp}`
+- **URL:** `https://frontend-api-v3.pump.fun/global-params/{timestamp}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `GlobalParamsController_getGlobalParamsByTimestamp`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `timestamp` | `number` | path | ✓ |  |
+| Parameter   | Type     | In   | Required | Description |
+| ----------- | -------- | ---- | -------- | ----------- |
+| `timestamp` | `number` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/global-params/<timestamp>" \
+curl -X GET "https://frontend-api-v3.pump.fun/global-params/<timestamp>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/global-params/<timestamp>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/global-params/<timestamp>"
+url = "https://frontend-api-v3.pump.fun/global-params/<timestamp>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

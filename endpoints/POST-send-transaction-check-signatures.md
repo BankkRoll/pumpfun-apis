@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/send-transaction/check-signatures`
+- **URL:** `https://frontend-api-v3.pump.fun/send-transaction/check-signatures`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `SendTransactionController_checkSignatures`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/send-transaction/check-signatures" \
+curl -X POST "https://frontend-api-v3.pump.fun/send-transaction/check-signatures" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X POST "https://frontend-api.pump.fun/send-transaction/check-signatures" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/send-transaction/check-signatures"
+url = "https://frontend-api-v3.pump.fun/send-transaction/check-signatures"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

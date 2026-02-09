@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/livekit/token/host`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/livekit/token/host`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_getLiveKitTokenForHost`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | query | ✓ |  |
-| `creator` | `string` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `mint`    | `string` | query | ✓        |             |
+| `creator` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/livestreams/livekit/token/host?mint=<mint>&creator=<creator>" \
+curl -X GET "https://frontend-api-v3.pump.fun/livestreams/livekit/token/host?mint=<mint>&creator=<creator>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/livestreams/livekit/token/host?mint=<
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/livekit/token/host?mint=<mint>&creator=<creator>"
+url = "https://frontend-api-v3.pump.fun/livestreams/livekit/token/host?mint=<mint>&creator=<creator>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

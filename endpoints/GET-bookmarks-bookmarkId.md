@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/bookmarks/{bookmarkId}`
+- **URL:** `https://frontend-api-v3.pump.fun/bookmarks/{bookmarkId}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `BookmarksController_getBookmarkById`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `bookmarkId` | `string` | path | ✓ |  |
-| `withDetails` | `boolean` | query | ✓ |  |
+| Parameter     | Type      | In    | Required | Description |
+| ------------- | --------- | ----- | -------- | ----------- |
+| `bookmarkId`  | `string`  | path  | ✓        |             |
+| `withDetails` | `boolean` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/bookmarks/<bookmarkId>?withDetails=<withDetails>" \
+curl -X GET "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>?withDetails=<withDetails>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/bookmarks/<bookmarkId>?withDetails=<w
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/bookmarks/<bookmarkId>?withDetails=<withDetails>"
+url = "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>?withDetails=<withDetails>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

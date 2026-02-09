@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/pinata-health/download-health`
+- **URL:** `https://frontend-api-v3.pump.fun/pinata-health/download-health`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `PinataHealthController_getDownloadHealth`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/pinata-health/download-health" \
+curl -X GET "https://frontend-api-v3.pump.fun/pinata-health/download-health" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X GET "https://frontend-api.pump.fun/pinata-health/download-health" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/pinata-health/download-health"
+url = "https://frontend-api-v3.pump.fun/pinata-health/download-health"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

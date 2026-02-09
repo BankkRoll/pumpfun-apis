@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/auth/is-super-admin`
+- **URL:** `https://frontend-api-v3.pump.fun/auth/is-super-admin`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `AuthController_isSuperAdmin`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/auth/is-super-admin" \
+curl -X GET "https://frontend-api-v3.pump.fun/auth/is-super-admin" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X GET "https://frontend-api.pump.fun/auth/is-super-admin" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/auth/is-super-admin"
+url = "https://frontend-api-v3.pump.fun/auth/is-super-admin"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

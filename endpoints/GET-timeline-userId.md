@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/timeline/{userId}`
+- **URL:** `https://frontend-api-v3.pump.fun/timeline/{userId}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TimelineController_getTimeline`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `userId` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `userId`  | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/timeline/<userId>" \
+curl -X GET "https://frontend-api-v3.pump.fun/timeline/<userId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/timeline/<userId>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/timeline/<userId>"
+url = "https://frontend-api-v3.pump.fun/timeline/<userId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

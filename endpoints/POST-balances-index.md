@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/balances/index`
+- **URL:** `https://frontend-api-v3.pump.fun/balances/index`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `BalancesController_index`
@@ -13,7 +13,7 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Request Body
 
@@ -28,12 +28,13 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/balances/index" \
+curl -X POST "https://frontend-api-v3.pump.fun/balances/index" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
@@ -45,7 +46,7 @@ curl -X POST "https://frontend-api.pump.fun/balances/index" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/balances/index"
+url = "https://frontend-api-v3.pump.fun/balances/index"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

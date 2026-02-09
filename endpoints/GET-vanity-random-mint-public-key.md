@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/vanity/random-mint-public-key`
+- **URL:** `https://frontend-api-v3.pump.fun/vanity/random-mint-public-key`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `VanityKeysController_getVanityTokenKeyV2`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/vanity/random-mint-public-key" \
+curl -X GET "https://frontend-api-v3.pump.fun/vanity/random-mint-public-key" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X GET "https://frontend-api.pump.fun/vanity/random-mint-public-key" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/vanity/random-mint-public-key"
+url = "https://frontend-api-v3.pump.fun/vanity/random-mint-public-key"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

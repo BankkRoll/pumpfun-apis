@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/bookmarks/{bookmarkId}/{itemId}`
+- **URL:** `https://frontend-api-v3.pump.fun/bookmarks/{bookmarkId}/{itemId}`
 - **Method:** `DELETE`
 - **API:** `frontend-api`
 - **Operation ID:** `BookmarksController_removeItemFromBookmark`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `bookmarkId` | `string` | path | ✓ |  |
-| `itemId` | `string` | path | ✓ |  |
+| Parameter    | Type     | In   | Required | Description |
+| ------------ | -------- | ---- | -------- | ----------- |
+| `bookmarkId` | `string` | path | ✓        |             |
+| `itemId`     | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X DELETE "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/<itemId>" \
+curl -X DELETE "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>/<itemId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X DELETE "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/<itemId>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/<itemId>"
+url = "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>/<itemId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

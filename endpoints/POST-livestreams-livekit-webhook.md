@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/livekit-webhook`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/livekit-webhook`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_liveKitWebhook`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `Authorization` | `string` | header | ✓ |  |
+| Parameter       | Type     | In     | Required | Description |
+| --------------- | -------- | ------ | -------- | ----------- |
+| `Authorization` | `string` | header | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/livestreams/livekit-webhook" \
+curl -X POST "https://frontend-api-v3.pump.fun/livestreams/livekit-webhook" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/livestreams/livekit-webhook" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/livekit-webhook"
+url = "https://frontend-api-v3.pump.fun/livestreams/livekit-webhook"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/check/{address}`
+- **URL:** `https://frontend-api-v3.pump.fun/check/{address}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `WalletScreeningController_check`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `address` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `address` | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/check/<address>" \
+curl -X GET "https://frontend-api-v3.pump.fun/check/<address>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/check/<address>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/check/<address>"
+url = "https://frontend-api-v3.pump.fun/check/<address>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

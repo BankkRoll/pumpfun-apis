@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/users`
+- **URL:** `https://frontend-api-v3.pump.fun/users`
 - **Method:** `DELETE`
 - **API:** `frontend-api`
 - **Operation ID:** `UsersController_deleteUser`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X DELETE "https://frontend-api.pump.fun/users" \
+curl -X DELETE "https://frontend-api-v3.pump.fun/users" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X DELETE "https://frontend-api.pump.fun/users" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/users"
+url = "https://frontend-api-v3.pump.fun/users"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

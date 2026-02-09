@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/candlesticks/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/candlesticks/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CandlesticksController_getAll`
@@ -13,22 +13,23 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `timeframe` | `number` | query | ✓ |  |
+| Parameter   | Type     | In    | Required | Description |
+| ----------- | -------- | ----- | -------- | ----------- |
+| `mint`      | `string` | path  | ✓        |             |
+| `offset`    | `number` | query | ✓        |             |
+| `limit`     | `number` | query | ✓        |             |
+| `timeframe` | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/candlesticks/<mint>?offset=<offset>&limit=<limit>&timeframe=<timeframe>" \
+curl -X GET "https://frontend-api-v3.pump.fun/candlesticks/<mint>?offset=<offset>&limit=<limit>&timeframe=<timeframe>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -38,7 +39,7 @@ curl -X GET "https://frontend-api.pump.fun/candlesticks/<mint>?offset=<offset>&l
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/candlesticks/<mint>?offset=<offset>&limit=<limit>&timeframe=<timeframe>"
+url = "https://frontend-api-v3.pump.fun/candlesticks/<mint>?offset=<offset>&limit=<limit>&timeframe=<timeframe>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

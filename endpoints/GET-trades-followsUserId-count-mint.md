@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/trades/followsUserId/count/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/trades/followsUserId/count/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TradesController_getAllByMintFollowingCount`
@@ -13,21 +13,22 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `followsUserId` | `string` | query | ✓ |  |
-| `minimumSize` | `number` | query | ✓ |  |
+| Parameter       | Type     | In    | Required | Description |
+| --------------- | -------- | ----- | -------- | ----------- |
+| `mint`          | `string` | path  | ✓        |             |
+| `followsUserId` | `string` | query | ✓        |             |
+| `minimumSize`   | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/trades/followsUserId/count/<mint>?followsUserId=<followsUserId>&minimumSize=<minimumSize>" \
+curl -X GET "https://frontend-api-v3.pump.fun/trades/followsUserId/count/<mint>?followsUserId=<followsUserId>&minimumSize=<minimumSize>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -37,7 +38,7 @@ curl -X GET "https://frontend-api.pump.fun/trades/followsUserId/count/<mint>?fol
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/trades/followsUserId/count/<mint>?followsUserId=<followsUserId>&minimumSize=<minimumSize>"
+url = "https://frontend-api-v3.pump.fun/trades/followsUserId/count/<mint>?followsUserId=<followsUserId>&minimumSize=<minimumSize>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

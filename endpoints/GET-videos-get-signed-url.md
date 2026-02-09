@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/videos/get-signed-url`
+- **URL:** `https://frontend-api-v3.pump.fun/videos/get-signed-url`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `VideosController_getSignedUrl`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `extension` | `string` | query | ✓ |  |
+| Parameter   | Type     | In    | Required | Description |
+| ----------- | -------- | ----- | -------- | ----------- |
+| `extension` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/videos/get-signed-url?extension=<extension>" \
+curl -X GET "https://frontend-api-v3.pump.fun/videos/get-signed-url?extension=<extension>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/videos/get-signed-url?extension=<exte
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/videos/get-signed-url?extension=<extension>"
+url = "https://frontend-api-v3.pump.fun/videos/get-signed-url?extension=<extension>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/ban-users`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/ban-users`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_getBanUsers`
@@ -13,27 +13,28 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `limit` | `string` | query | ✓ |  |
-| `offset` | `string` | query | ✓ |  |
-| `sortBy` | `string` | query | ✓ |  |
-| `order` | `string` | query | ✓ |  |
-| `searchQuery` | `string` | query | ✓ |  |
-| `active` | `string` | query | ✓ |  |
-| `unbanRequest` | `string` | query | ✓ |  |
-| `fromDate` | `string` | query | ✓ |  |
-| `toDate` | `string` | query | ✓ |  |
+| Parameter      | Type     | In    | Required | Description |
+| -------------- | -------- | ----- | -------- | ----------- |
+| `limit`        | `string` | query | ✓        |             |
+| `offset`       | `string` | query | ✓        |             |
+| `sortBy`       | `string` | query | ✓        |             |
+| `order`        | `string` | query | ✓        |             |
+| `searchQuery`  | `string` | query | ✓        |             |
+| `active`       | `string` | query | ✓        |             |
+| `unbanRequest` | `string` | query | ✓        |             |
+| `fromDate`     | `string` | query | ✓        |             |
+| `toDate`       | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/moderation/ban-users?limit=<limit>&offset=<offset>&sortBy=<sortBy>&order=<order>&searchQuery=<searchQuery>&active=<active>&unbanRequest=<unbanRequest>&fromDate=<fromDate>&toDate=<toDate>" \
+curl -X GET "https://frontend-api-v3.pump.fun/moderation/ban-users?limit=<limit>&offset=<offset>&sortBy=<sortBy>&order=<order>&searchQuery=<searchQuery>&active=<active>&unbanRequest=<unbanRequest>&fromDate=<fromDate>&toDate=<toDate>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -43,7 +44,7 @@ curl -X GET "https://frontend-api.pump.fun/moderation/ban-users?limit=<limit>&of
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/ban-users?limit=<limit>&offset=<offset>&sortBy=<sortBy>&order=<order>&searchQuery=<searchQuery>&active=<active>&unbanRequest=<unbanRequest>&fromDate=<fromDate>&toDate=<toDate>"
+url = "https://frontend-api-v3.pump.fun/moderation/ban-users?limit=<limit>&offset=<offset>&sortBy=<sortBy>&order=<order>&searchQuery=<searchQuery>&active=<active>&unbanRequest=<unbanRequest>&fromDate=<fromDate>&toDate=<toDate>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/reports/reportComment`
+- **URL:** `https://frontend-api-v3.pump.fun/reports/reportComment`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `ReportsController_reportComment`
@@ -13,9 +13,9 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `x-client-key` | `string` | header | ✓ |  |
+| Parameter      | Type     | In     | Required | Description |
+| -------------- | -------- | ------ | -------- | ----------- |
+| `x-client-key` | `string` | header | ✓        |             |
 
 ## Request Body
 
@@ -30,12 +30,13 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/reports/reportComment" \
+curl -X POST "https://frontend-api-v3.pump.fun/reports/reportComment" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
@@ -47,7 +48,7 @@ curl -X POST "https://frontend-api.pump.fun/reports/reportComment" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/reports/reportComment"
+url = "https://frontend-api-v3.pump.fun/reports/reportComment"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

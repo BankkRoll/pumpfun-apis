@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/stream/livechat-token`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/stream/livechat-token`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_getStreamLiveChatToken`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `userId` | `string` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `userId`  | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/livestreams/stream/livechat-token?userId=<userId>" \
+curl -X GET "https://frontend-api-v3.pump.fun/livestreams/stream/livechat-token?userId=<userId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/livestreams/stream/livechat-token?use
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/stream/livechat-token?userId=<userId>"
+url = "https://frontend-api-v3.pump.fun/livestreams/stream/livechat-token?userId=<userId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

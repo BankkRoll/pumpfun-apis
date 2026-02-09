@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/reports`
+- **URL:** `https://frontend-api-v3.pump.fun/reports`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `ReportsController_getReports`
@@ -13,25 +13,26 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `type` | `string` | query | ✓ |  |
-| `done` | `string` | query | ✓ |  |
-| `createdAtFrom` | `string` | query | ✓ |  |
-| `createdAtTo` | `string` | query | ✓ |  |
-| `isCurrentlyLive` | `string` | query | ✓ |  |
+| Parameter         | Type     | In    | Required | Description |
+| ----------------- | -------- | ----- | -------- | ----------- |
+| `limit`           | `number` | query | ✓        |             |
+| `offset`          | `number` | query | ✓        |             |
+| `type`            | `string` | query | ✓        |             |
+| `done`            | `string` | query | ✓        |             |
+| `createdAtFrom`   | `string` | query | ✓        |             |
+| `createdAtTo`     | `string` | query | ✓        |             |
+| `isCurrentlyLive` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/reports?limit=<limit>&offset=<offset>&type=<type>&done=<done>&createdAtFrom=<createdAtFrom>&createdAtTo=<createdAtTo>&isCurrentlyLive=<isCurrentlyLive>" \
+curl -X GET "https://frontend-api-v3.pump.fun/reports?limit=<limit>&offset=<offset>&type=<type>&done=<done>&createdAtFrom=<createdAtFrom>&createdAtTo=<createdAtTo>&isCurrentlyLive=<isCurrentlyLive>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -41,7 +42,7 @@ curl -X GET "https://frontend-api.pump.fun/reports?limit=<limit>&offset=<offset>
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/reports?limit=<limit>&offset=<offset>&type=<type>&done=<done>&createdAtFrom=<createdAtFrom>&createdAtTo=<createdAtTo>&isCurrentlyLive=<isCurrentlyLive>"
+url = "https://frontend-api-v3.pump.fun/reports?limit=<limit>&offset=<offset>&type=<type>&done=<done>&createdAtFrom=<createdAtFrom>&createdAtTo=<createdAtTo>&isCurrentlyLive=<isCurrentlyLive>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

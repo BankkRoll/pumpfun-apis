@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/reports/{id}`
+- **URL:** `https://frontend-api-v3.pump.fun/reports/{id}`
 - **Method:** `DELETE`
 - **API:** `frontend-api`
 - **Operation ID:** `ReportsController_deleteReport`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `id`      | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X DELETE "https://frontend-api.pump.fun/reports/<id>" \
+curl -X DELETE "https://frontend-api-v3.pump.fun/reports/<id>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X DELETE "https://frontend-api.pump.fun/reports/<id>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/reports/<id>"
+url = "https://frontend-api-v3.pump.fun/reports/<id>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

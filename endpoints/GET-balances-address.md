@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/balances/{address}`
+- **URL:** `https://frontend-api-v3.pump.fun/balances/{address}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `BalancesController_getBalances`
@@ -13,22 +13,23 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `address` | `string` | path | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `minBalance` | `number` | query | ✓ |  |
+| Parameter    | Type     | In    | Required | Description |
+| ------------ | -------- | ----- | -------- | ----------- |
+| `address`    | `string` | path  | ✓        |             |
+| `offset`     | `number` | query | ✓        |             |
+| `limit`      | `number` | query | ✓        |             |
+| `minBalance` | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/balances/<address>?offset=<offset>&limit=<limit>&minBalance=<minBalance>" \
+curl -X GET "https://frontend-api-v3.pump.fun/balances/<address>?offset=<offset>&limit=<limit>&minBalance=<minBalance>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -38,7 +39,7 @@ curl -X GET "https://frontend-api.pump.fun/balances/<address>?offset=<offset>&li
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/balances/<address>?offset=<offset>&limit=<limit>&minBalance=<minBalance>"
+url = "https://frontend-api-v3.pump.fun/balances/<address>?offset=<offset>&limit=<limit>&minBalance=<minBalance>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

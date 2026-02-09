@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/bookmarks/{bookmarkId}`
+- **URL:** `https://frontend-api-v3.pump.fun/bookmarks/{bookmarkId}`
 - **Method:** `PUT`
 - **API:** `frontend-api`
 - **Operation ID:** `BookmarksController_updateBookmarkName`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `bookmarkId` | `string` | path | ✓ |  |
+| Parameter    | Type     | In   | Required | Description |
+| ------------ | -------- | ---- | -------- | ----------- |
+| `bookmarkId` | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X PUT "https://frontend-api.pump.fun/bookmarks/<bookmarkId>" \
+curl -X PUT "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X PUT "https://frontend-api.pump.fun/bookmarks/<bookmarkId>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/bookmarks/<bookmarkId>"
+url = "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/bulk-ban`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/bulk-ban`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_bulkBan`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/moderation/bulk-ban" \
+curl -X POST "https://frontend-api-v3.pump.fun/moderation/bulk-ban" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X POST "https://frontend-api.pump.fun/moderation/bulk-ban" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/bulk-ban"
+url = "https://frontend-api-v3.pump.fun/moderation/bulk-ban"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

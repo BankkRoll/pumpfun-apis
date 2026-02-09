@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/trades/count/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/trades/count/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TradesController_getTradesCount`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `minimumSize` | `number` | query | ✓ |  |
+| Parameter     | Type     | In    | Required | Description |
+| ------------- | -------- | ----- | -------- | ----------- |
+| `mint`        | `string` | path  | ✓        |             |
+| `minimumSize` | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/trades/count/<mint>?minimumSize=<minimumSize>" \
+curl -X GET "https://frontend-api-v3.pump.fun/trades/count/<mint>?minimumSize=<minimumSize>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/trades/count/<mint>?minimumSize=<mini
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/trades/count/<mint>?minimumSize=<minimumSize>"
+url = "https://frontend-api-v3.pump.fun/trades/count/<mint>?minimumSize=<minimumSize>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

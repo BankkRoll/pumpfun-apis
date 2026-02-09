@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/captcha-score`
+- **URL:** `https://frontend-api-v3.pump.fun/captcha-score`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `CaptchaScoresController_setCaptchaScoreForUser`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `captchaToken` | `string` | query | ✓ |  |
+| Parameter      | Type     | In    | Required | Description |
+| -------------- | -------- | ----- | -------- | ----------- |
+| `captchaToken` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/captcha-score?captchaToken=<captchaToken>" \
+curl -X POST "https://frontend-api-v3.pump.fun/captcha-score?captchaToken=<captchaToken>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/captcha-score?captchaToken=<captchaT
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/captcha-score?captchaToken=<captchaToken>"
+url = "https://frontend-api-v3.pump.fun/captcha-score?captchaToken=<captchaToken>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

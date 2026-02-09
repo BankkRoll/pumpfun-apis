@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/vanity/key`
+- **URL:** `https://frontend-api-v3.pump.fun/vanity/key`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `VanityKeysController_getVanityTokenKey`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `captchaToken` | `string` | query | ✓ |  |
+| Parameter      | Type     | In    | Required | Description |
+| -------------- | -------- | ----- | -------- | ----------- |
+| `captchaToken` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/vanity/key?captchaToken=<captchaToken>" \
+curl -X GET "https://frontend-api-v3.pump.fun/vanity/key?captchaToken=<captchaToken>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/vanity/key?captchaToken=<captchaToken
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/vanity/key?captchaToken=<captchaToken>"
+url = "https://frontend-api-v3.pump.fun/vanity/key?captchaToken=<captchaToken>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

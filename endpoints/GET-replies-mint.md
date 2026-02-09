@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/replies/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/replies/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `RepliesController_getReplies`
@@ -13,23 +13,24 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `user` | `string` | query | ✓ |  |
-| `reverseOrder` | `boolean` | query | ✓ |  |
+| Parameter      | Type      | In    | Required | Description |
+| -------------- | --------- | ----- | -------- | ----------- |
+| `mint`         | `string`  | path  | ✓        |             |
+| `limit`        | `number`  | query | ✓        |             |
+| `offset`       | `number`  | query | ✓        |             |
+| `user`         | `string`  | query | ✓        |             |
+| `reverseOrder` | `boolean` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/replies/<mint>?limit=<limit>&offset=<offset>&user=<user>&reverseOrder=<reverseOrder>" \
+curl -X GET "https://frontend-api-v3.pump.fun/replies/<mint>?limit=<limit>&offset=<offset>&user=<user>&reverseOrder=<reverseOrder>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -39,7 +40,7 @@ curl -X GET "https://frontend-api.pump.fun/replies/<mint>?limit=<limit>&offset=<
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/replies/<mint>?limit=<limit>&offset=<offset>&user=<user>&reverseOrder=<reverseOrder>"
+url = "https://frontend-api-v3.pump.fun/replies/<mint>?limit=<limit>&offset=<offset>&user=<user>&reverseOrder=<reverseOrder>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

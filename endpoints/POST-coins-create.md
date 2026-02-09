@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/create`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/create`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_createCoin`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/coins/create" \
+curl -X POST "https://frontend-api-v3.pump.fun/coins/create" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X POST "https://frontend-api.pump.fun/coins/create" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/create"
+url = "https://frontend-api-v3.pump.fun/coins/create"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

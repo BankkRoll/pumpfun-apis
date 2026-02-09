@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/moderated-comments`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/moderated-comments`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_getModeratedComments`
@@ -13,23 +13,24 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `limit` | `number` | query | ✓ |  |
-| `groupNumber` | `number` | query | ✓ |  |
-| `nextToken` | `string` | query | ✓ |  |
-| `showNonSpam` | `boolean` | query | ✓ |  |
-| `statusFilters` | `array` | query | ✓ |  |
+| Parameter       | Type      | In    | Required | Description |
+| --------------- | --------- | ----- | -------- | ----------- |
+| `limit`         | `number`  | query | ✓        |             |
+| `groupNumber`   | `number`  | query | ✓        |             |
+| `nextToken`     | `string`  | query | ✓        |             |
+| `showNonSpam`   | `boolean` | query | ✓        |             |
+| `statusFilters` | `array`   | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/moderation/moderated-comments?limit=<limit>&groupNumber=<groupNumber>&nextToken=<nextToken>&showNonSpam=<showNonSpam>&statusFilters=<statusFilters>" \
+curl -X GET "https://frontend-api-v3.pump.fun/moderation/moderated-comments?limit=<limit>&groupNumber=<groupNumber>&nextToken=<nextToken>&showNonSpam=<showNonSpam>&statusFilters=<statusFilters>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -39,7 +40,7 @@ curl -X GET "https://frontend-api.pump.fun/moderation/moderated-comments?limit=<
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/moderated-comments?limit=<limit>&groupNumber=<groupNumber>&nextToken=<nextToken>&showNonSpam=<showNonSpam>&statusFilters=<statusFilters>"
+url = "https://frontend-api-v3.pump.fun/moderation/moderated-comments?limit=<limit>&groupNumber=<groupNumber>&nextToken=<nextToken>&showNonSpam=<showNonSpam>&statusFilters=<statusFilters>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

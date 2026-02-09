@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/logs`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/logs`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_getLogs`
@@ -13,21 +13,22 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `offset` | `number` | query | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `moderator` | `string` | query | ✓ |  |
+| Parameter   | Type     | In    | Required | Description |
+| ----------- | -------- | ----- | -------- | ----------- |
+| `offset`    | `number` | query | ✓        |             |
+| `limit`     | `number` | query | ✓        |             |
+| `moderator` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/moderation/logs?offset=<offset>&limit=<limit>&moderator=<moderator>" \
+curl -X GET "https://frontend-api-v3.pump.fun/moderation/logs?offset=<offset>&limit=<limit>&moderator=<moderator>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -37,7 +38,7 @@ curl -X GET "https://frontend-api.pump.fun/moderation/logs?offset=<offset>&limit
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/logs?offset=<offset>&limit=<limit>&moderator=<moderator>"
+url = "https://frontend-api-v3.pump.fun/moderation/logs?offset=<offset>&limit=<limit>&moderator=<moderator>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_getOne`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `sync` | `boolean` | query | ✓ |  |
+| Parameter | Type      | In    | Required | Description |
+| --------- | --------- | ----- | -------- | ----------- |
+| `mint`    | `string`  | path  | ✓        |             |
+| `sync`    | `boolean` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/coins/<mint>?sync=<sync>" \
+curl -X GET "https://frontend-api-v3.pump.fun/coins/<mint>?sync=<sync>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/coins/<mint>?sync=<sync>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/<mint>?sync=<sync>"
+url = "https://frontend-api-v3.pump.fun/coins/<mint>?sync=<sync>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

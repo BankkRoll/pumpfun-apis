@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/metas/search`
+- **URL:** `https://frontend-api-v3.pump.fun/metas/search`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `MetasController_getSearchResultsForMeta`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `meta` | `string` | query | ✓ |  |
-| `includeNsfw` | `boolean` | query | ✓ |  |
+| Parameter     | Type      | In    | Required | Description |
+| ------------- | --------- | ----- | -------- | ----------- |
+| `meta`        | `string`  | query | ✓        |             |
+| `includeNsfw` | `boolean` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/metas/search?meta=<meta>&includeNsfw=<includeNsfw>" \
+curl -X GET "https://frontend-api-v3.pump.fun/metas/search?meta=<meta>&includeNsfw=<includeNsfw>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/metas/search?meta=<meta>&includeNsfw=
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/metas/search?meta=<meta>&includeNsfw=<includeNsfw>"
+url = "https://frontend-api-v3.pump.fun/metas/search?meta=<meta>&includeNsfw=<includeNsfw>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

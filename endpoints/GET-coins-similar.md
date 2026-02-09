@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/similar`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/similar`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_getSimilarCoins`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | query | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `mint`    | `string` | query | ✓        |             |
+| `limit`   | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/coins/similar?mint=<mint>&limit=<limit>" \
+curl -X GET "https://frontend-api-v3.pump.fun/coins/similar?mint=<mint>&limit=<limit>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/coins/similar?mint=<mint>&limit=<limi
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/similar?mint=<mint>&limit=<limit>"
+url = "https://frontend-api-v3.pump.fun/coins/similar?mint=<mint>&limit=<limit>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

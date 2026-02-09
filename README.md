@@ -16,8 +16,6 @@ See the [endpoints/](endpoints/) folder for complete endpoint documentation or b
 https://frontend-api-v3.pump.fun/
 ```
 
-**159 endpoints** - Main API for pump.fun platform operations
-
 ### Frontend API v2 (Deprecated)
 
 [![Frontend API v2 Deprecated](https://img.shields.io/badge/Frontend%20API-v2%20Deprecated-red)](./discovered/frontend-api-v2.json)
@@ -25,8 +23,6 @@ https://frontend-api-v3.pump.fun/
 ```bash
 https://frontend-api-v2.pump.fun/
 ```
-
-**159 endpoints** - Previous version with similar functionality
 
 ### Frontend API v1 (Deprecated)
 
@@ -36,8 +32,6 @@ https://frontend-api-v2.pump.fun/
 https://frontend-api.pump.fun/
 ```
 
-**154 endpoints** - Original API version
-
 ### Advanced Analytics API v2
 
 [![Advanced API v2](https://img.shields.io/badge/Advanced%20Analytics%20API-v2-blue)](./discovered/advanced-api-v2.json)
@@ -45,8 +39,6 @@ https://frontend-api.pump.fun/
 ```bash
 https://advanced-api-v2.pump.fun/
 ```
-
-**11 endpoints** - Advanced coin analytics and metadata
 
 ### Other Discovered API Domains
 

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/likes/{targetId}`
+- **URL:** `https://frontend-api-v3.pump.fun/likes/{targetId}`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `LikesController_createLike`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `targetId` | `string` | path | ✓ |  |
+| Parameter  | Type     | In   | Required | Description |
+| ---------- | -------- | ---- | -------- | ----------- |
+| `targetId` | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/likes/<targetId>" \
+curl -X POST "https://frontend-api-v3.pump.fun/likes/<targetId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/likes/<targetId>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/likes/<targetId>"
+url = "https://frontend-api-v3.pump.fun/likes/<targetId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/trades/signatures/small`
+- **URL:** `https://frontend-api-v3.pump.fun/trades/signatures/small`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `TradesController_getTradesBySignaturesSmall`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/trades/signatures/small" \
+curl -X POST "https://frontend-api-v3.pump.fun/trades/signatures/small" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X POST "https://frontend-api.pump.fun/trades/signatures/small" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/trades/signatures/small"
+url = "https://frontend-api-v3.pump.fun/trades/signatures/small"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/trades/all/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/trades/all/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TradesController_getAllByMint`
@@ -13,22 +13,23 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `minimumSize` | `number` | query | ✓ |  |
+| Parameter     | Type     | In    | Required | Description |
+| ------------- | -------- | ----- | -------- | ----------- |
+| `mint`        | `string` | path  | ✓        |             |
+| `limit`       | `number` | query | ✓        |             |
+| `offset`      | `number` | query | ✓        |             |
+| `minimumSize` | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/trades/all/<mint>?limit=<limit>&offset=<offset>&minimumSize=<minimumSize>" \
+curl -X GET "https://frontend-api-v3.pump.fun/trades/all/<mint>?limit=<limit>&offset=<offset>&minimumSize=<minimumSize>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -38,7 +39,7 @@ curl -X GET "https://frontend-api.pump.fun/trades/all/<mint>?limit=<limit>&offse
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/trades/all/<mint>?limit=<limit>&offset=<offset>&minimumSize=<minimumSize>"
+url = "https://frontend-api-v3.pump.fun/trades/all/<mint>?limit=<limit>&offset=<offset>&minimumSize=<minimumSize>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

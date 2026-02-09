@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/bookmarks/items/{itemId}`
+- **URL:** `https://frontend-api-v3.pump.fun/bookmarks/items/{itemId}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `BookmarksController_getBookmarksForItem`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `itemId` | `string` | path | ✓ |  |
-| `withUsers` | `boolean` | query | ✓ |  |
+| Parameter   | Type      | In    | Required | Description |
+| ----------- | --------- | ----- | -------- | ----------- |
+| `itemId`    | `string`  | path  | ✓        |             |
+| `withUsers` | `boolean` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/bookmarks/items/<itemId>?withUsers=<withUsers>" \
+curl -X GET "https://frontend-api-v3.pump.fun/bookmarks/items/<itemId>?withUsers=<withUsers>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/bookmarks/items/<itemId>?withUsers=<w
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/bookmarks/items/<itemId>?withUsers=<withUsers>"
+url = "https://frontend-api-v3.pump.fun/bookmarks/items/<itemId>?withUsers=<withUsers>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

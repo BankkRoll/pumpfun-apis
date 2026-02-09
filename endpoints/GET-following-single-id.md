@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/following/single/{id}`
+- **URL:** `https://frontend-api-v3.pump.fun/following/single/{id}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `FollowingController_getFollow`
@@ -13,20 +13,21 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `string` | path | ✓ |  |
-| `userId` | `string` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `id`      | `string` | path  | ✓        |             |
+| `userId`  | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/following/single/<id>?userId=<userId>" \
+curl -X GET "https://frontend-api-v3.pump.fun/following/single/<id>?userId=<userId>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -36,7 +37,7 @@ curl -X GET "https://frontend-api.pump.fun/following/single/<id>?userId=<userId>
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/following/single/<id>?userId=<userId>"
+url = "https://frontend-api-v3.pump.fun/following/single/<id>?userId=<userId>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/users/register`
+- **URL:** `https://frontend-api-v3.pump.fun/users/register`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `UsersController_register`
@@ -13,17 +13,18 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/users/register" \
+curl -X POST "https://frontend-api-v3.pump.fun/users/register" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -33,7 +34,7 @@ curl -X POST "https://frontend-api.pump.fun/users/register" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/users/register"
+url = "https://frontend-api-v3.pump.fun/users/register"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/delete-photo/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/delete-photo/{mint}`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_deletePhoto`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `mint`    | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/moderation/delete-photo/<mint>" \
+curl -X POST "https://frontend-api-v3.pump.fun/moderation/delete-photo/<mint>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/moderation/delete-photo/<mint>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/delete-photo/<mint>"
+url = "https://frontend-api-v3.pump.fun/moderation/delete-photo/<mint>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

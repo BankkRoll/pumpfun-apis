@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/bookmarks/{bookmarkId}/items`
+- **URL:** `https://frontend-api-v3.pump.fun/bookmarks/{bookmarkId}/items`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `BookmarksController_addItemToBookmark`
@@ -13,9 +13,9 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `bookmarkId` | `string` | path | ✓ |  |
+| Parameter    | Type     | In   | Required | Description |
+| ------------ | -------- | ---- | -------- | ----------- |
+| `bookmarkId` | `string` | path | ✓        |             |
 
 ## Request Body
 
@@ -30,12 +30,13 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/items" \
+curl -X POST "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>/items" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
@@ -47,7 +48,7 @@ curl -X POST "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/items" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/bookmarks/<bookmarkId>/items"
+url = "https://frontend-api-v3.pump.fun/bookmarks/<bookmarkId>/items"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

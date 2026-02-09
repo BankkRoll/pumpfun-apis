@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/ban-regex-patterns/{id}`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/ban-regex-patterns/{id}`
 - **Method:** `DELETE`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_removeRegexBanPattern`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `id`      | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X DELETE "https://frontend-api.pump.fun/moderation/ban-regex-patterns/<id>" \
+curl -X DELETE "https://frontend-api-v3.pump.fun/moderation/ban-regex-patterns/<id>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X DELETE "https://frontend-api.pump.fun/moderation/ban-regex-patterns/<id>
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/ban-regex-patterns/<id>"
+url = "https://frontend-api-v3.pump.fun/moderation/ban-regex-patterns/<id>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

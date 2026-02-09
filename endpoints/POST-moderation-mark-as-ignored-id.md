@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/moderation/mark-as-ignored/{id}`
+- **URL:** `https://frontend-api-v3.pump.fun/moderation/mark-as-ignored/{id}`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `ModerationController_markAsIgnored`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `number` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `id`      | `number` | path | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/moderation/mark-as-ignored/<id>" \
+curl -X POST "https://frontend-api-v3.pump.fun/moderation/mark-as-ignored/<id>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/moderation/mark-as-ignored/<id>" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/moderation/mark-as-ignored/<id>"
+url = "https://frontend-api-v3.pump.fun/moderation/mark-as-ignored/<id>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

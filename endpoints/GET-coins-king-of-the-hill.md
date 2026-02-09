@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/king-of-the-hill`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/king-of-the-hill`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_getKingOfTheHill`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `includeNsfw` | `string` | query | ✓ |  |
+| Parameter     | Type     | In    | Required | Description |
+| ------------- | -------- | ----- | -------- | ----------- |
+| `includeNsfw` | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/coins/king-of-the-hill?includeNsfw=<includeNsfw>" \
+curl -X GET "https://frontend-api-v3.pump.fun/coins/king-of-the-hill?includeNsfw=<includeNsfw>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/coins/king-of-the-hill?includeNsfw=<i
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/king-of-the-hill?includeNsfw=<includeNsfw>"
+url = "https://frontend-api-v3.pump.fun/coins/king-of-the-hill?includeNsfw=<includeNsfw>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/{mint}/raw`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/{mint}/raw`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_getCoinRaw`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `mint`    | `string` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/livestreams/<mint>/raw" \
+curl -X GET "https://frontend-api-v3.pump.fun/livestreams/<mint>/raw" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/livestreams/<mint>/raw" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/<mint>/raw"
+url = "https://frontend-api-v3.pump.fun/livestreams/<mint>/raw"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

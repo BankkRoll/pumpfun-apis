@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/update-livestream`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/update-livestream`
 - **Method:** `PUT`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_updateLivestream`
@@ -13,7 +13,7 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-*None*
+_None_
 
 ## Request Body
 
@@ -28,12 +28,13 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X PUT "https://frontend-api.pump.fun/livestreams/update-livestream" \
+curl -X PUT "https://frontend-api-v3.pump.fun/livestreams/update-livestream" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
@@ -45,7 +46,7 @@ curl -X PUT "https://frontend-api.pump.fun/livestreams/update-livestream" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/update-livestream"
+url = "https://frontend-api-v3.pump.fun/livestreams/update-livestream"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

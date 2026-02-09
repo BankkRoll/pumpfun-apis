@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/coins/protected`
+- **URL:** `https://frontend-api-v3.pump.fun/coins/protected`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `CoinsController_getAllProtected`
@@ -13,30 +13,31 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `sort` | `string` | query | ✓ |  |
-| `searchTerm` | `string` | query | ✓ |  |
-| `order` | `string` | query | ✓ |  |
-| `includeNsfw` | `string` | query | ✓ |  |
-| `creator` | `string` | query | ✓ |  |
-| `complete` | `string` | query | ✓ |  |
-| `isLive` | `string` | query | ✓ |  |
-| `fromDate` | `string` | query | ✓ |  |
-| `toDate` | `string` | query | ✓ |  |
-| `banned` | `string` | query | ✓ |  |
+| Parameter     | Type     | In    | Required | Description |
+| ------------- | -------- | ----- | -------- | ----------- |
+| `limit`       | `number` | query | ✓        |             |
+| `offset`      | `number` | query | ✓        |             |
+| `sort`        | `string` | query | ✓        |             |
+| `searchTerm`  | `string` | query | ✓        |             |
+| `order`       | `string` | query | ✓        |             |
+| `includeNsfw` | `string` | query | ✓        |             |
+| `creator`     | `string` | query | ✓        |             |
+| `complete`    | `string` | query | ✓        |             |
+| `isLive`      | `string` | query | ✓        |             |
+| `fromDate`    | `string` | query | ✓        |             |
+| `toDate`      | `string` | query | ✓        |             |
+| `banned`      | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/coins/protected?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&isLive=<isLive>&fromDate=<fromDate>&toDate=<toDate>&banned=<banned>" \
+curl -X GET "https://frontend-api-v3.pump.fun/coins/protected?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&isLive=<isLive>&fromDate=<fromDate>&toDate=<toDate>&banned=<banned>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -46,7 +47,7 @@ curl -X GET "https://frontend-api.pump.fun/coins/protected?limit=<limit>&offset=
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/coins/protected?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&isLive=<isLive>&fromDate=<fromDate>&toDate=<toDate>&banned=<banned>"
+url = "https://frontend-api-v3.pump.fun/coins/protected?limit=<limit>&offset=<offset>&sort=<sort>&searchTerm=<searchTerm>&order=<order>&includeNsfw=<includeNsfw>&creator=<creator>&complete=<complete>&isLive=<isLive>&fromDate=<fromDate>&toDate=<toDate>&banned=<banned>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

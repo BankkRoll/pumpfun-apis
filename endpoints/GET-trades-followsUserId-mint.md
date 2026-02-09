@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/trades/followsUserId/{mint}`
+- **URL:** `https://frontend-api-v3.pump.fun/trades/followsUserId/{mint}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `TradesController_getAllByMintFollowing`
@@ -13,23 +13,24 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | path | ✓ |  |
-| `followsUserId` | `string` | query | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
-| `minimumSize` | `number` | query | ✓ |  |
+| Parameter       | Type     | In    | Required | Description |
+| --------------- | -------- | ----- | -------- | ----------- |
+| `mint`          | `string` | path  | ✓        |             |
+| `followsUserId` | `string` | query | ✓        |             |
+| `limit`         | `number` | query | ✓        |             |
+| `offset`        | `number` | query | ✓        |             |
+| `minimumSize`   | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/trades/followsUserId/<mint>?followsUserId=<followsUserId>&limit=<limit>&offset=<offset>&minimumSize=<minimumSize>" \
+curl -X GET "https://frontend-api-v3.pump.fun/trades/followsUserId/<mint>?followsUserId=<followsUserId>&limit=<limit>&offset=<offset>&minimumSize=<minimumSize>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -39,7 +40,7 @@ curl -X GET "https://frontend-api.pump.fun/trades/followsUserId/<mint>?followsUs
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/trades/followsUserId/<mint>?followsUserId=<followsUserId>&limit=<limit>&offset=<offset>&minimumSize=<minimumSize>"
+url = "https://frontend-api-v3.pump.fun/trades/followsUserId/<mint>?followsUserId=<followsUserId>&limit=<limit>&offset=<offset>&minimumSize=<minimumSize>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

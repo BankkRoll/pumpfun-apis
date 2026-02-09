@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/replies/ban`
+- **URL:** `https://frontend-api-v3.pump.fun/replies/ban`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `RepliesController_getBan`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `id` | `number` | path | ✓ |  |
+| Parameter | Type     | In   | Required | Description |
+| --------- | -------- | ---- | -------- | ----------- |
+| `id`      | `number` | path | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/replies/ban" \
+curl -X GET "https://frontend-api-v3.pump.fun/replies/ban" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X GET "https://frontend-api.pump.fun/replies/ban" \
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/replies/ban"
+url = "https://frontend-api-v3.pump.fun/replies/ban"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

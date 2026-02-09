@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/livestreams/livekit/invite-to-stage`
+- **URL:** `https://frontend-api-v3.pump.fun/livestreams/livekit/invite-to-stage`
 - **Method:** `POST`
 - **API:** `frontend-api`
 - **Operation ID:** `LivestreamController_inviteToStage`
@@ -13,19 +13,20 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `mint` | `string` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `mint`    | `string` | query | ✓        |             |
 
 ## Responses
 
 ### 201
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X POST "https://frontend-api.pump.fun/livestreams/livekit/invite-to-stage?mint=<mint>" \
+curl -X POST "https://frontend-api-v3.pump.fun/livestreams/livekit/invite-to-stage?mint=<mint>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -35,7 +36,7 @@ curl -X POST "https://frontend-api.pump.fun/livestreams/livekit/invite-to-stage?
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/livestreams/livekit/invite-to-stage?mint=<mint>"
+url = "https://frontend-api-v3.pump.fun/livestreams/livekit/invite-to-stage?mint=<mint>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"

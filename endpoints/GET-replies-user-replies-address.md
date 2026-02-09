@@ -2,7 +2,7 @@
 
 ## Endpoint Information
 
-- **URL:** `https://frontend-api.pump.fun/replies/user-replies/{address}`
+- **URL:** `https://frontend-api-v3.pump.fun/replies/user-replies/{address}`
 - **Method:** `GET`
 - **API:** `frontend-api`
 - **Operation ID:** `RepliesController_getUserReplies`
@@ -13,21 +13,22 @@ Requires JWT authentication via `Authorization: Bearer <token>` header.
 
 ## Parameters
 
-| Parameter | Type | In | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `address` | `string` | path | ✓ |  |
-| `limit` | `number` | query | ✓ |  |
-| `offset` | `number` | query | ✓ |  |
+| Parameter | Type     | In    | Required | Description |
+| --------- | -------- | ----- | -------- | ----------- |
+| `address` | `string` | path  | ✓        |             |
+| `limit`   | `number` | query | ✓        |             |
+| `offset`  | `number` | query | ✓        |             |
 
 ## Responses
 
 ### 200
+
 ## Example Usage
 
 ### cURL
 
 ```bash
-curl -X GET "https://frontend-api.pump.fun/replies/user-replies/<address>?limit=<limit>&offset=<offset>" \
+curl -X GET "https://frontend-api-v3.pump.fun/replies/user-replies/<address>?limit=<limit>&offset=<offset>" \
   -H "Authorization: Bearer <your_token>" \
   -H "Accept: application/json"
 ```
@@ -37,7 +38,7 @@ curl -X GET "https://frontend-api.pump.fun/replies/user-replies/<address>?limit=
 ```python
 import requests
 
-url = "https://frontend-api.pump.fun/replies/user-replies/<address>?limit=<limit>&offset=<offset>"
+url = "https://frontend-api-v3.pump.fun/replies/user-replies/<address>?limit=<limit>&offset=<offset>"
 headers = {
     "Authorization": "Bearer <your_token>",
     "Accept": "application/json"
